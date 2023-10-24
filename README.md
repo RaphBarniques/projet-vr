@@ -12,7 +12,7 @@ Agent environnement
 
 Yupitergrad
 ![image](https://github.com/RaphBarniques/projet-vr/assets/94623626/00bd7342-a358-4390-8264-e69f7b434630)
-Bioshock
+Void Bastards
 ![image](https://github.com/RaphBarniques/projet-vr/assets/94623626/c7939195-00a5-4ed2-b4d2-3404da21b9fc)
 XIII
 ![image](https://github.com/RaphBarniques/projet-vr/assets/94623626/89cea7ce-d310-42f3-9947-9a8d390b693e)
