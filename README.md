@@ -23,6 +23,9 @@ Hacker Interface
 BenBonk Scamming a Scammer
 ![image](https://github.com/RaphBarniques/projet-vr/assets/94623626/f2d967f2-4626-43f5-89d4-487c4878ff8c)
 
+## Audio
+[Musique](https://youtu.be/qgCrJfKJzxU?si=PfIR99uE95eXwbJz)
+[Sound effect](https://youtu.be/OOOm7jZicEg?si=0FtyFITP6Fif3zRG)
 
 ## Enivronnement
 ![espace](https://github.com/RaphBarniques/projet-vr/assets/94623626/b3c637ea-3fd0-409e-a107-d098558bc023)
