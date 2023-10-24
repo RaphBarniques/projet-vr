@@ -30,3 +30,7 @@ BenBonk Scamming a Scammer
 
 ## Enivronnement
 ![espace](https://github.com/RaphBarniques/projet-vr/assets/94623626/b3c637ea-3fd0-409e-a107-d098558bc023)
+
+## Interaction
+![image](https://github.com/RaphBarniques/projet-vr/assets/94623626/7ae08b95-26d2-4f5a-b09c-2f8d5f18eb98)
+
