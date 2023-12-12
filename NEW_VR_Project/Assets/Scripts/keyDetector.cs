@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class keyDetector : MonoBehaviour
 {
    
 private TextMeshPro display;
 
-private KeyPadControll keyPadControll;
+private GameObject keyPadControll;
 
     void Start()
     {
