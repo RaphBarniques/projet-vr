@@ -44789,6 +44789,10 @@ PrefabInstance:
       value: Keypad
       objectReference: {fileID: 0}
     - target: {fileID: 2570109540564910691, guid: a63c184e44d80ae459c04c2208462566, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570109540564910691, guid: a63c184e44d80ae459c04c2208462566, type: 3}
       propertyPath: m_TagString
       value: Keypad
       objectReference: {fileID: 0}
@@ -45920,7 +45924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6788525613425063188, guid: 049185633526bba43a4a53d5a9d58b7d, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7150476122038186667, guid: 049185633526bba43a4a53d5a9d58b7d, type: 3}
       propertyPath: m_LeftHandSnapTurnAction.m_UseReference
