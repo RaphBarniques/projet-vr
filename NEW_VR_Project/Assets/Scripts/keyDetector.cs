@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class keyDetector : MonoBehaviour
    
 private TextMeshPro display;
 
-private GameObject keyPadControll;
+private KeyPadControll keyPadControll;
 
     void Start()
     {
@@ -24,15 +25,16 @@ if (other.CompareTag("KeypadButton")){
 
 var key = other.GetComponentInChildren<TextMeshPro>();
 if (key != null){
-    var keyFeedBack = other.gameObject.GetComponent<keyFeedBack>();
+    var keyFeedBack = other.gameObject.GetComponent<keyFeedback>();
 
     if (key.text == "Enter"){
         var accessGranted = false;
-        if (display.text.Length > 0){
+        bool onlyNumbers = int.TryParse(display.text, out int value);
+        if (onlyNumbers == true && display.text.Length > 0){
             accessGranted = keyPadControll.CheckIfCorrect(Convert.ToInt32(display.text));
         }
 if(accessGranted == true){
-   display.text = "Start"; 
+   display.text = "OK"; 
 }else{
     display.text = "Retry";
 }
