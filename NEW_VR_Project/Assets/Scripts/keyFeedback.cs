@@ -24,7 +24,7 @@ private float returnColor;
         audioSource.spatialBlend = 1;
         audioSource.volume = 0.1f;
         renderer = GetComponent<Renderer>();
-        originalColor = renderer.material.color;
+        //originalColor = renderer.material.color;
 
 
     
@@ -35,13 +35,13 @@ private float returnColor;
         if (keyHit && returnColor < Time.time){
         audioSource.PlayOneShot(keySound);
         returnColor = Time.time + colorReturnTime;
-        renderer.material.color = Color.green;    
+        //renderer.material.color = Color.green;    
         keyHit = false;
         }
 
-        if (renderer.material.color != originalColor && returnColor < Time.time){
+        /*if (renderer.material.color != originalColor && returnColor < Time.time){
             renderer.material.color = originalColor;
-        }
+        }*/
         
     }
 }
