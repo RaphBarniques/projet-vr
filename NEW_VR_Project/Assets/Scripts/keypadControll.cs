@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class KeyPadControll : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class KeyPadControll : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip solvedSound;
     public AudioClip failSound;
+    private TextMeshPro receivedDisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -36,16 +38,17 @@ public class KeyPadControll : MonoBehaviour
                 } else if (timerTriggered && timerEnd <= timer) {
                     timerTriggered = false;
                     accessGranted = false;
-                    needReset = true;
+                    receivedDisplay.text = "";
                 }
             }   
         }
     }
 
-    public bool CheckIfCorrect(int combination) {
+    public bool CheckIfCorrect(int combination, TextMeshPro display) {
         if (combination == correctCombination) {
             accessGranted = true;
             audioSource.PlayOneShot(solvedSound);
+            receivedDisplay = display;
             return true;
         }
         audioSource.PlayOneShot(failSound);
