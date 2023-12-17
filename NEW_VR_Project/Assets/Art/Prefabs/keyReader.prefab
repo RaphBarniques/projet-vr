@@ -32,8 +32,8 @@ Transform:
   m_LocalScale: {x: 0.019981459, y: 0.22123751, z: 0.18387473}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2460855522765599044}
   - {fileID: 1774130058064270032}
+  - {fileID: 2460855522765599044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &681514138967278803
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 7548024044829682997}
   - component: {fileID: 7783348151438602930}
   m_Layer: 0
-  m_Name: screen (1)
+  m_Name: screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

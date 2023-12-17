@@ -8,7 +8,6 @@ public class KeyPadControll : MonoBehaviour
     public int correctCombination;
     public bool accessGranted = false;
     public bool useOnce;
-    public bool needReset = false;
     public float wait = 5;
     private float timer = 0;
     private float timerEnd;

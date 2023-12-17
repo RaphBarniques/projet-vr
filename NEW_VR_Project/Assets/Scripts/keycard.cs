@@ -1,21 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class keycard : MonoBehaviour
+public class Keycard : MonoBehaviour
 {
-  private Animator anim;
-
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
-    void Update()
-    {
-            if (anim != null)
-            {
-                anim.Play("Base Layer.ascenseur-porte");
-            }
-    }
+    // Public variable to store the keycard ID
+    public int keycardID = 1; // Set this ID for each keycard in the Inspector
 }
