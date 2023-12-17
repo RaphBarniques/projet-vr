@@ -441,7 +441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Clear
+  m_text: Cancel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 3193248761919452680}
   - component: {fileID: 7669967595105492005}
   - component: {fileID: 5794681105579028912}
+  - component: {fileID: 534145186976520228}
   m_Layer: 0
   m_Name: keyEnter
   m_TagString: KeypadButton
@@ -989,6 +990,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &534145186976520228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981336468692828001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &2077138903190980728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1188,7 @@ GameObject:
   - component: {fileID: 5589702918993283660}
   - component: {fileID: 5236915547412138307}
   - component: {fileID: 8294216722014622572}
+  - component: {fileID: 2117789741093366987}
   m_Layer: 0
   m_Name: key6
   m_TagString: KeypadButton
@@ -1294,6 +1310,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2117789741093366987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250456996156546320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &2570109540564910691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,7 +1354,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.604, y: -1.386, z: 12.805}
-  m_LocalScale: {x: 0.027815977, y: 0.20558, z: 0.14910227}
+  m_LocalScale: {x: 0.053876765, y: 0.3981879, z: 0.2887962}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2414631908315175978}
@@ -1427,8 +1457,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctCombination: 2580
   accessGranted: 0
-  useOnce: 1
+  useOnce: 0
+  needReset: 0
   wait: 5
+  solvedSound: {fileID: 0}
+  failSound: {fileID: 0}
 --- !u!1 &3378144725690421652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1646,7 @@ GameObject:
   - component: {fileID: 3411167463757013836}
   - component: {fileID: 6294075694547531789}
   - component: {fileID: 3645550557860404471}
+  - component: {fileID: 1128375653568290535}
   m_Layer: 0
   m_Name: key8
   m_TagString: KeypadButton
@@ -1734,6 +1768,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1128375653568290535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812774396020068077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &4023768952631251999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1795,7 @@ GameObject:
   - component: {fileID: 2245849507131353873}
   - component: {fileID: 7471515394524484271}
   - component: {fileID: 2989362755687218123}
+  - component: {fileID: 5185529981546057631}
   m_Layer: 0
   m_Name: key2
   m_TagString: KeypadButton
@@ -1868,6 +1917,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5185529981546057631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4023768952631251999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &4961498956534869253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +1944,7 @@ GameObject:
   - component: {fileID: 5490629646258999451}
   - component: {fileID: 6672238487970006420}
   - component: {fileID: 2151394269397678424}
+  - component: {fileID: 3176829270625156106}
   m_Layer: 0
   m_Name: keyClear
   m_TagString: KeypadButton
@@ -2002,6 +2066,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3176829270625156106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4961498956534869253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &5028241624934643207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2199,7 @@ GameObject:
   - component: {fileID: 5605170551952727117}
   - component: {fileID: 6173738082788179915}
   - component: {fileID: 1273511490578362552}
+  - component: {fileID: 653039527652035352}
   m_Layer: 0
   m_Name: key7
   m_TagString: KeypadButton
@@ -2242,6 +2321,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &653039527652035352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289941549922400898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &5622947666778929148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3203,7 @@ GameObject:
   - component: {fileID: 1494091033854818437}
   - component: {fileID: 4978324954554374120}
   - component: {fileID: 646865260777829901}
+  - component: {fileID: 153418231093015579}
   m_Layer: 0
   m_Name: key3
   m_TagString: KeypadButton
@@ -3231,6 +3325,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &153418231093015579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7200993738004372638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &7434994212275263052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,6 +3352,7 @@ GameObject:
   - component: {fileID: 8293306934000801019}
   - component: {fileID: 4770157541901667766}
   - component: {fileID: 117077034305207605}
+  - component: {fileID: 1277250004871890154}
   m_Layer: 0
   m_Name: key0
   m_TagString: KeypadButton
@@ -3365,6 +3474,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1277250004871890154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434994212275263052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &8278657646524563987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,6 +3501,7 @@ GameObject:
   - component: {fileID: 7896750227970964194}
   - component: {fileID: 3883474532466299403}
   - component: {fileID: 6557719742498534516}
+  - component: {fileID: 5384387173435319355}
   m_Layer: 0
   m_Name: key5
   m_TagString: KeypadButton
@@ -3499,6 +3623,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5384387173435319355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8278657646524563987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &8535795024179037802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,6 +3650,7 @@ GameObject:
   - component: {fileID: 8058984062654050891}
   - component: {fileID: 8295623329557546355}
   - component: {fileID: 81189698374979292}
+  - component: {fileID: 3949589641276197604}
   m_Layer: 0
   m_Name: key1
   m_TagString: KeypadButton
@@ -3601,7 +3740,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
@@ -3633,6 +3772,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3949589641276197604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8535795024179037802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &8588769037297951000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,6 +3799,7 @@ GameObject:
   - component: {fileID: 8887495828088693681}
   - component: {fileID: 1536863592304831328}
   - component: {fileID: 2973969520987268279}
+  - component: {fileID: 4415076270518696194}
   m_Layer: 0
   m_Name: key9
   m_TagString: KeypadButton
@@ -3767,6 +3921,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4415076270518696194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588769037297951000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &8598965056611545725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,6 +3948,7 @@ GameObject:
   - component: {fileID: 2251341084536937409}
   - component: {fileID: 8221477805911527319}
   - component: {fileID: 4267331672526245950}
+  - component: {fileID: 935201946937780992}
   m_Layer: 0
   m_Name: key4
   m_TagString: KeypadButton
@@ -3901,6 +4070,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &935201946937780992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598965056611545725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e14523a6f2f0944c9fb74a42e224fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keySound: {fileID: 8300000, guid: 582794573fda65346b6de13b3a70d415, type: 3}
+  keyHit: 0
 --- !u!1 &9139104308936492117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,14 +4210,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9
-  m_fontSizeBase: 9
+  m_fontSize: 6.7
+  m_fontSizeBase: 6.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4063,7 +4246,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.651734, y: -0.5244832, z: 8.629751, w: 3.614562}
+  m_margin: {x: 9.732407, y: -0.5244832, z: 8.699788, w: 3.614562}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
