@@ -13,6 +13,7 @@ public class KeycardReader : MonoBehaviour
     private bool timerTriggered;
     private TextMeshPro display;
     private AudioSource audioSource;
+    public AudioClip beep;
     public AudioClip solvedSound;
     public AudioClip failSound;
 
@@ -35,6 +36,8 @@ public class KeycardReader : MonoBehaviour
             // Check if the Keycard script is not null
             if (keycard != null)
             {
+                audioSource.PlayOneShot(beep);
+                
                 if (keycard.keycardID == correctKeycardID)
                 {
                     accessGranted = true;
