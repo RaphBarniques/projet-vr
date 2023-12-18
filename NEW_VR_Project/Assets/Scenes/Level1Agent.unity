@@ -34360,7 +34360,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 5dc4788d6fd2a9d49983283d68066f5b, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -34976,15 +34988,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 248628205027390654, guid: c8abccbdb7acf2d41b607b89996f65b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.036779
+      value: 9.93
       objectReference: {fileID: 0}
     - target: {fileID: 248628205027390654, guid: c8abccbdb7acf2d41b607b89996f65b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.012
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 248628205027390654, guid: c8abccbdb7acf2d41b607b89996f65b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.23
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 248628205027390654, guid: c8abccbdb7acf2d41b607b89996f65b2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38567,6 +38579,7 @@ Transform:
   - {fileID: 713871535}
   - {fileID: 1195692977}
   - {fileID: 413599047}
+  - {fileID: 247472721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1602560552
