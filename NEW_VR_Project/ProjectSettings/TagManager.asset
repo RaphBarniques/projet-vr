@@ -7,6 +7,8 @@ TagManager:
   - Keypad
   - Display
   - KeypadButton
+  - Keycard
+  - Ground
   layers:
   - Default
   - TransparentFX
