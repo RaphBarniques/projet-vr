@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 568af0ec84e9b284aa81547da5796322, type: 3}
+  - {fileID: 2100000, guid: e136b1cde986b5b46b0a71333e0d89b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,12 +120,12 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300052503371565151}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 4850154107051036071}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: -0.035, y: 0.03, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.3217572, y: 0.5876365, z: 0.2956175}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -297,7 +297,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 568af0ec84e9b284aa81547da5796322, type: 3}
+  - {fileID: 2100000, guid: e136b1cde986b5b46b0a71333e0d89b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
