@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Dongle : MonoBehaviour
-{
+{/*
     public XRSocketInteractor xrSocket;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class Dongle : MonoBehaviour
         
     }
 
-    public ReturnToSocket()
+    public void ReturnToSocket()
     {   
 
         if (xrSocket && xrSocket.selectTarget == null)
@@ -46,4 +46,4 @@ public class Dongle : MonoBehaviour
         }
         return false;
     }
-}
+*/}
