@@ -35419,6 +35419,7 @@ GameObject:
   - component: {fileID: 1448965463}
   - component: {fileID: 1448965462}
   - component: {fileID: 1448965466}
+  - component: {fileID: 1448965467}
   m_Layer: 0
   m_Name: elevator
   m_TagString: Untagged
@@ -35533,6 +35534,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1448965467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448965461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0217d712de5026545ab131ae56dcb1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keypadScript: {fileID: 0}
+  keycardScript: {fileID: 7955189408091792626}
 --- !u!1 &1451561261
 GameObject:
   m_ObjectHideFlags: 0
@@ -55241,6 +55256,17 @@ PrefabInstance:
       insertIndex: 5
       addedObject: {fileID: 1538030742}
   m_SourcePrefab: {fileID: 100100000, guid: cd216b5ee617b1943928e838dff6e59f, type: 3}
+--- !u!114 &7955189408091792626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8617098903260611441, guid: cd216b5ee617b1943928e838dff6e59f, type: 3}
+  m_PrefabInstance: {fileID: 7955189408091792625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93615d6c0e06e254c9cd6f6dbbd5c152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8001877436104119735
 Transform:
   m_ObjectHideFlags: 0
