@@ -6,7 +6,9 @@ public class SafeScript : MonoBehaviour
 
     public KeyPadControll keypadScript;
     public Rigidbody SafeDoor;
-    
+    public Rigidbody Keypad;
+    public Rigidbody SafeHandle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class SafeScript : MonoBehaviour
         if (keypadScript.accessGranted == true) {
             //Do something
             SafeDoor.isKinematic = false;
+            Keypad.isKinematic = false;
+            SafeHandle.isKinematic = false;
         }
     }
 }
