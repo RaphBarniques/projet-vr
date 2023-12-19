@@ -5,25 +5,25 @@ using UnityEngine;
 public class ExempleDetect : MonoBehaviour
 {
 
-    public KeyPadControll keypadScript;
     public KeycardReader keycardScript;
+    public Animator animator;
+    private bool isActive = false;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator.Play("ascenseur-porte-reverse");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (keypadScript.accessGranted == true) {
-            //Do something
-        }
-
-        if (keycardScript.accessGranted == true) {
-            //Do something
+        if (keycardScript.accessGranted == true && isActive == false) {
             animator.Play("ascenseur-porte");
-        }
+            isActive = true;
+        } /*else if (keycardScript.accessGranted == false && isActive == true){
+            animator.Play("ascenseur-porte-reverse");
+            isActive = false;
+        }*/
     }
 }
