@@ -23,6 +23,7 @@ public class ExempleDetect : MonoBehaviour
 
         if (keycardScript.accessGranted == true) {
             //Do something
+            animator.Play("ascenseur-porte");
         }
     }
 }
