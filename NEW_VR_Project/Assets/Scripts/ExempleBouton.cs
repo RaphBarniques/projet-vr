@@ -6,6 +6,7 @@ public class ExempleBouton : MonoBehaviour
 {
     
     public Button votreBouton;
+    public Canvas projection;
 
     // Start is called before the first frame update
     void Start()
