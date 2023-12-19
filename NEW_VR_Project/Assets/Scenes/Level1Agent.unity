@@ -8451,7 +8451,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3682fcd8fbcc84a4e8825f72ac11e15f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8491,7 +8491,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.39, y: -2.03, z: 12.43}
-  m_LocalScale: {x: 21.518, y: 0.045517, z: 22.916}
+  m_LocalScale: {x: 46.85114, y: 0.045517, z: 37.082672}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -18339,7 +18339,7 @@ PrefabInstance:
     - target: {fileID: 2929640277652407947, guid: 893229f09eb0fce4ca06e1acdaca479e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 74291114e668a9b43959557c26c15c03, type: 2}
+      objectReference: {fileID: 2100000, guid: f8d91d5097dc6a247933a2677a631286, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
