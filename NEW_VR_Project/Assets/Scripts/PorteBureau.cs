@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ExempleDetect : MonoBehaviour
+public class PorteBureau : MonoBehaviour
 {
 
     public KeycardReader keycardScript;

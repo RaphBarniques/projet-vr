@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 49718300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0217d712de5026545ab131ae56dcb1bf, type: 3}
+  m_Script: {fileID: 11500000, guid: fbb9f4ce3daf1c94bb6afc6a788b08a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keycardScript: {fileID: 903606173}
@@ -35027,6 +35027,7 @@ GameObject:
   - component: {fileID: 1448965463}
   - component: {fileID: 1448965462}
   - component: {fileID: 1448965466}
+  - component: {fileID: 1448965468}
   - component: {fileID: 1448965467}
   m_Layer: 0
   m_Name: elevator
@@ -35152,6 +35153,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0217d712de5026545ab131ae56dcb1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keycardScript: {fileID: 7955189408091792626}
+  animator: {fileID: 1448965466}
+--- !u!114 &1448965468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448965461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4ea85b9956f134593290bcd970555e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keycardScript: {fileID: 7955189408091792626}
@@ -53095,9 +53110,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f8ac46841afe8243b828a37920e5a55, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.071
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

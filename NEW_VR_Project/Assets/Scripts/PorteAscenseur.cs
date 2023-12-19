@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ExempleDetect : MonoBehaviour
+public class PorteAscenseur : MonoBehaviour
 {
 
     public KeycardReader keycardScript;
@@ -13,19 +13,19 @@ public class ExempleDetect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator.Play("porte-bureau-reverse");
+        animator.Play("ascenseur-porte-reverse");
     }
 
     // Update is called once per frame
     void Update()
     {
         if (keycardScript.accessGranted == true && isActive == false) {
-            animator.Play("porte-bureau");
+            animator.Play("ascenseur-porte");
             isActive = true;
         }
 
         if (keycardScript.accessGranted == false && isActive == true) {
-            animator.Play("porte-bureau-reverse");
+            animator.Play("ascenseur-porte-reverse");
             isActive = false;
         }
     }
