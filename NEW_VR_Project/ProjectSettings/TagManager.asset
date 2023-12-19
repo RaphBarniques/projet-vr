@@ -9,6 +9,7 @@ TagManager:
   - KeypadButton
   - Keycard
   - Ground
+  - Controller
   layers:
   - Default
   - TransparentFX
