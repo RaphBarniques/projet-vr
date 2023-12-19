@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
+
 public class ExempleDetect : MonoBehaviour
 {
 
@@ -19,8 +19,8 @@ public class ExempleDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keypadScript.accessGranted == true) {
-            //Do something
+        if (keycardScript.accessGranted == true) {
+            animator.Play("ascenseur-porte");
         }
 
         if (keycardScript.accessGranted == true) {
@@ -28,4 +28,3 @@ public class ExempleDetect : MonoBehaviour
         }
     }
 }
-*/
