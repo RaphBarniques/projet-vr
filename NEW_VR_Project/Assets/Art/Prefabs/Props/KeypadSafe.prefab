@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 6886547418951850173}
   - component: {fileID: 8516669516600433269}
   - component: {fileID: 499895246719765380}
+  - component: {fileID: 2577134927274545490}
   m_Layer: 0
   m_Name: SafeDoor
   m_TagString: Untagged
@@ -442,7 +443,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -506,6 +507,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.069535166, y: 0.06881493, z: 0.0069133416}
   m_Center: {x: -2.0190364e-18, y: 0, z: 0.000077958444}
+--- !u!114 &2577134927274545490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3757809315440071509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ce354b1c2a1f94ca5d371f7592df50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keypadScript: {fileID: 1409803412444936217}
+  SafeDoor: {fileID: 6886547418951850173}
 --- !u!1 &6251100404272162992
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9171758760721680056, guid: a63c184e44d80ae459c04c2208462566, type: 3}
+      propertyPath: correctCombination
+      value: 1234
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -839,6 +858,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7153889471200398588, guid: a63c184e44d80ae459c04c2208462566, type: 3}
   m_PrefabInstance: {fileID: 7843020143768469153}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1409803412444936217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9171758760721680056, guid: a63c184e44d80ae459c04c2208462566, type: 3}
+  m_PrefabInstance: {fileID: 7843020143768469153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724880273116216514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7e4371374e46f46829ee62d7eb3fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5724880273116216514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2570109540564910691, guid: a63c184e44d80ae459c04c2208462566, type: 3}
