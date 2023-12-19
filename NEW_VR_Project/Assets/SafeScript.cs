@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-/*
-public class ExempleDetect : MonoBehaviour
+public class SafeScript : MonoBehaviour
 {
 
     public KeyPadControll keypadScript;
-    public KeycardReader keycardScript;
+    public Rigidbody SafeDoor;
     
     // Start is called before the first frame update
     void Start()
@@ -20,12 +18,7 @@ public class ExempleDetect : MonoBehaviour
     {
         if (keypadScript.accessGranted == true) {
             //Do something
-        }
-
-        if (keycardScript.accessGranted == true) {
-            //Do something
-            animator.Play("ascenseur-porte");
+            SafeDoor.isKinematic = false;
         }
     }
 }
-*/
