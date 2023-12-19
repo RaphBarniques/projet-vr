@@ -10,6 +10,7 @@ TagManager:
   - Keycard
   - Ground
   - Controller
+  - slide
   layers:
   - Default
   - TransparentFX

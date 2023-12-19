@@ -11,7 +11,7 @@ public class ServerRoomDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator.Play("ascenseur-porte-reverse");
+        animator.Play("serveur-porte-reverse");
     }
 
     // Update is called once per frame
@@ -19,13 +19,13 @@ public class ServerRoomDoor : MonoBehaviour
     {
         if (KeypadScript.accessGranted == true && isActive == false)
         {
-            animator.Play("ascenseur-porte");
+            animator.Play("serveur-porte");
             isActive = true;
         }
 
         if (KeypadScript.accessGranted == false && isActive == true)
         {
-            animator.Play("ascenseur-porte-reverse");
+            animator.Play("serveur-porte-reverse");
             isActive = false;
         }
     }

@@ -19,6 +19,9 @@ public class ExempleBouton : MonoBehaviour
         
         if (votreBouton.isButtonPressed == true){
             //Do something
+            if(other.tag == "slide"){
+                projection.setActive(true);
+            }
         }
 
     }
