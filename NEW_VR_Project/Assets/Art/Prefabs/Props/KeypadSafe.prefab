@@ -521,8 +521,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keypadScript: {fileID: 1409803412444936217}
   SafeDoor: {fileID: 6886547418951850173}
-  Keypad: {fileID: 0}
-  SafeHandle: {fileID: 0}
+  Keypad: {fileID: 3896757550421630931}
+  SafeHandle: {fileID: 5558705152002398735}
 --- !u!1 &6251100404272162992
 GameObject:
   m_ObjectHideFlags: 0
