@@ -19,12 +19,14 @@ public class ExempleDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keycardScript.accessGranted == true) {
+        if (keycardScript.accessGranted == true && isActive == false) {
             animator.Play("ascenseur-porte");
+            isActive = true;
         }
 
-        if (keycardScript.accessGranted == true) {
-            //Do something
+        if (keycardScript.accessGranted == false && isActive == true) {
+            animator.Play("ascenseur-porte-reverse");
+            isActive = false;
         }
     }
 }
