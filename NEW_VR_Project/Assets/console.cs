@@ -11,13 +11,13 @@ public class ListChildren : MonoBehaviour
     public GameObject group;
     public GameObject ErrorBox;
     public TextMeshProUGUI Error;
-    public TextMeshProUGUI ButtonText;
+    public TextMeshPro ButtonText;
+    public Button ButtonBody;
     public bool buttonClicked;
     private string ErrorMessage;
 
     void Start()
     {
-
         // Loop through all children and add them to the list
         for (int i = 0; i < group.transform.childCount; i++)
         {
@@ -35,7 +35,7 @@ public class ListChildren : MonoBehaviour
     private IEnumerator WaitForButtonPress()
     {   
         buttonClicked = false;
-        yield return new WaitUntil(() => buttonClicked);
+        yield return new WaitUntil(() => ButtonBody.isButtonPressed);
         buttonClicked = false;
         ButtonText.text = "Continuer";
         for(int i = 0; i < 5; i++)
@@ -50,7 +50,7 @@ public class ListChildren : MonoBehaviour
             yield return new WaitUntil(() => server.buttonPressed);
             ErrorBox.SetActive(false);
             buttonClicked = false;
-            yield return new WaitUntil(() => buttonClicked);
+            yield return new WaitUntil(() => ButtonBody.isButtonPressed);
             buttonClicked = false;
             yield return new WaitForSeconds(3f);
         } 
