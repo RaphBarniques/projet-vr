@@ -6,7 +6,6 @@ public class ExempleBouton : MonoBehaviour
 {
     
     public Button votreBouton;
-    public Canvas projection;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +19,7 @@ public class ExempleBouton : MonoBehaviour
         
         if (votreBouton.isButtonPressed == true){
             //Do something
-            if(other.tag == "slide"){
-                projection.setActive(true);
-            }
+            
         }
 
     }
