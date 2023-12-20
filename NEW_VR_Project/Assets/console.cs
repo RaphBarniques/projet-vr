@@ -59,5 +59,6 @@ public class ListChildren : MonoBehaviour
         } 
             SuccessBox.SetActive(true);
             yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("End");
     }
 }
