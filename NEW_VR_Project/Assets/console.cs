@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ListChildren : MonoBehaviour
@@ -10,6 +11,7 @@ public class ListChildren : MonoBehaviour
     public List<Transform> childrenList = new List<Transform>();
     public GameObject group;
     public GameObject ErrorBox;
+    public GameObject SuccessBox;
     public TextMeshProUGUI Error;
     public TextMeshPro ButtonText;
     public Button ButtonBody;
@@ -25,6 +27,7 @@ public class ListChildren : MonoBehaviour
             childrenList.Add(child);
         }
         ErrorBox.SetActive(false);
+        SuccessBox.SetActive(false);
         StartCoroutine(WaitForButtonPress());
     }
 
@@ -54,6 +57,7 @@ public class ListChildren : MonoBehaviour
             buttonClicked = false;
             yield return new WaitForSeconds(3f);
         } 
-        
+            SuccessBox.SetActive(true);
+            yield return new WaitForSeconds(3f);
     }
 }
